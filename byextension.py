@@ -1,5 +1,7 @@
-import os 
-import shutil 
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+import os
+import shutil
 from pathlib import Path
 import bydate as ti
 import random
