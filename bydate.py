@@ -10,7 +10,7 @@ from datetime import datetime
 # this function is used to sort by date
 
 def bydate(path):
-    print("File Organizing in progress by size of files, Please wait...")
+    print("File Organizing in progress by date of files, Please wait...")
     wait_time = random.randint(1,30)
     time.sleep(wait_time)
     lis = os.listdir(path)
@@ -37,7 +37,7 @@ def bydate(path):
         else:
             os.makedirs(modified_date)
             shutil.move(os.path.join(path, x), modified_date)
-    print("File organizing completed by Size.")
+    print("File organizing completed by Date.")
 
     
     

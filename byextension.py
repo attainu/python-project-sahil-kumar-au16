@@ -8,7 +8,7 @@ import random
 import time
 
 def sort_exten(path):
-  print("File Organizing in progress by size of files, Please wait...")
+  print("File Organizing in progress by extension of files, Please wait...")
   wait_time = random.randint(1,30)
   time.sleep(wait_time)
   all_extension = {
@@ -41,7 +41,7 @@ def sort_exten(path):
     source = path+'//'+file  
     dest = path+'//'+folder_name
     shutil.move(source, dest)
-  print("File organizing completed by Size.")
+  print("File organizing completed by extension.")
 
 
 
